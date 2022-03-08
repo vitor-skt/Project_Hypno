@@ -1,0 +1,131 @@
+.BackgroundImgContact{
+    position: fixed;
+    z-index: -1;
+    height: calc(100vh - 5.5rem);
+    width: 100vw;
+    display: flex;
+    filter: invert(82%) sepia(54%) saturate(3458%) hue-rotate(207deg) brightness(106%) contrast(103%);
+    opacity: 0.1;
+    justify-content: space-between;
+
+    & .BackgroundImg1{
+        height: 30rem;
+        padding-top: 2rem;
+        padding-left: 7rem;
+    }
+
+    & .BackgroundImg2{
+        padding-top: 20rem;
+        height: 40rem;
+        padding-right: 1rem;
+    }
+}
+.contactConteiner{
+    background-color: var(--Purple-900);
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: top;
+    z-index: -1;
+}
+.contactArea{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contactArea div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 450px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s linear;
+
+}
+
+.contactArea div:hover{
+    height: 110px;
+    width: 460px;
+}
+
+.contactArea div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.contactArea div a i{
+    margin-left: 6px;
+}
+
+.contactArea p{
+    font-size: 26px;
+}
+
+.whatsapp{
+   background-color: #25D366;
+}
+
+.instagram{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.celular,.email{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.fa-envelope{
+    font-size: 60px;
+    margin-left: 4px;
+ }
+
+@media screen and (max-width: 960px) {
+    .BackgroundImg1{
+        display: none;
+    }
+    .BackgroundImg2{
+       width: 100vw;
+       object-fit: contain;
+    }
+    .contactArea div{
+        height: 100px;
+        width: 250px;
+    }
+    .contactArea p{
+        font-size: 16cdpx;
+    }
+
+    .fa-envelope{
+       font-size: 50px;
+       width: 50px;
+       height: 50px;
+    }
+    .contactArea div:hover{
+        height: 100px;
+        width: 250px;
+        box-shadow: none;
+    }
+    .fa-square-phone-flip{
+        display: none;
+    }
+    .whatsapp{
+        margin-top: 5.5rem;
+    }
+    
+}
+
+

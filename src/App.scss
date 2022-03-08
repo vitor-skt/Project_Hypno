@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+html{
+    background-color: var(--purple-900);
+}
+body::-webkit-scrollbar{
+    width: 0.25rem;
+    & body::-webkit-scrollbar-track{
+        background: #1e1e24;
+    }
+    &body::-webkit-scrollbar-thumb{
+        background: var(--purple-500)
+    }
+}
+
+:root{
+    --Purple-900: #10002b;
+    --Purple-800: #240046;
+    --Purple-700: #3c096c;
+    --Purple-600: #5a189a;
+    --Purple-500: #7b2cbf;
+    --Purple-400: #9d4edd;
+    --Purple-300: #c77dff;
+    --Purple-200: #e0aaff;
+  }

@@ -1,11 +1,18 @@
 import React from 'react'
+import './index.scss'
+import InsertInfo from '../../components/InfoConteiner/infoConteiner'
 
-function aboutMe() {
+function AboutMe() {
     return (
         <>
+            <InsertInfo InnerInfo={"Sobre Mim"} />
+            <div className="aboutMeConteiner">
+                <div className="mainAboutMeContent">
 
+                </div>
+            </div>
         </>
     )
 }
 
-export default aboutMe
+export default AboutMe

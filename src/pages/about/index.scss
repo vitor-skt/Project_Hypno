@@ -1,0 +1,21 @@
+.aboutMeConteiner{
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+
+
+    .mainAboutMeContent{
+        color: #fff;
+        background-color:  rgba(0, 0, 0, 0.349);
+        width: 50rem;
+        height: 50rem;
+        border-radius: 1rem;
+    }
+
+}

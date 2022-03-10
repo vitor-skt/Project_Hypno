@@ -1,14 +1,24 @@
 .aboutMeConteiner{
-    width: 100vw;
-    position: fixed;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
     display: flex;
+    align-items: center;
     justify-content: center;
+    background: var(--Purple-900);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: -1;
+    position:fixed;
 
-
+    .backgroundImgAboutMe{
+        width: 100vw;
+        height: 80vh;
+        position: fixed;
+        filter: invert(82%) sepia(54%) saturate(3458%) hue-rotate(207deg) brightness(106%) contrast(103%);
+        opacity: 0.1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .mainAboutMeContent{
         color: #fff;
@@ -18,4 +28,28 @@
         border-radius: 1rem;
     }
 
+
+}
+
+@media screen and (max-width: 960px) {
+    article img{
+        display: none;
+    }
+
+    .mainAboutMeContent{
+        width: 95%;
+        height: 80%;
+        align-items: center;
+        margin-top:1rem;
+        justify-content: center;
+                
+    
+        & h1{
+        margin-left: 1rem;
+        }
+    
+        & p{
+         font-size: 0.9rem;
+        }
+    }
 }

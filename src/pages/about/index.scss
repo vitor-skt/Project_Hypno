@@ -21,11 +21,20 @@
     }
 
     .mainAboutMeContent{
+        margin-top: -7rem;
         color: #fff;
         background-color:  rgba(0, 0, 0, 0.349);
         width: 50rem;
-        height: 50rem;
+        height: 45rem;
         border-radius: 1rem;
+
+        .textAboutMe{
+            margin: 1.4rem;
+            opacity: 0.9;
+            line-height: 1.8rem;       
+            font-size: 1.2rem;
+            text-align: start;
+        }
     }
 
 
@@ -34,22 +43,22 @@
 @media screen and (max-width: 960px) {
     article img{
         display: none;
+        z-index: -1;
     }
 
     .mainAboutMeContent{
-        width: 95%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 1rem;
+        align-items: center;
+        height: 100%;
+    }
+    .AboutMeTextConteiner{
+        max-width: 95%;
         height: 80%;
         align-items: center;
         margin-top:1rem;
         justify-content: center;
-                
-    
-        & h1{
-        margin-left: 1rem;
-        }
-    
-        & p{
-         font-size: 0.9rem;
-        }
     }
 }

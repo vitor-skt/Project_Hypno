@@ -1,5 +1,5 @@
 .aboutMeConteiner{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background: var(--Purple-900);
@@ -9,31 +9,35 @@
     z-index: -1;
     position:fixed;
 
-    .backgroundImgAboutMe{
-        width: 100vw;
-        height: 80vh;
-        position: fixed;
-        filter: invert(82%) sepia(54%) saturate(3458%) hue-rotate(207deg) brightness(106%) contrast(103%);
-        opacity: 0.1;
+    .mainAboutMeContent{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+        background: var(--Purple-900);
+        width: 100vw;
+        height: calc(100vh - 5.5rem);
+        color: white;
+        z-index: -1;
 
-    .mainAboutMeContent{
-        margin-top: -7rem;
-        color: #fff;
-        background-color:  rgba(0, 0, 0, 0.349);
-        width: 50rem;
-        height: 45rem;
-        border-radius: 1rem;
 
-        .textAboutMe{
-            margin: 1.4rem;
-            opacity: 0.9;
-            line-height: 1.8rem;       
-            font-size: 1.2rem;
-            text-align: start;
+        .textBoxConteiner{
+            display:flex;
+            flex-direction: column;
+            background-color:  rgba(0, 0, 0, 0.349);
+            width : 37.5rem;
+            height: 37.5rem;
+            border-radius: 1rem;
+            align-items: center;
+            margin: 1rem;
+            margin-top: -10rem;
+
+            & p{
+                margin: 1.4rem;
+                opacity: 0.9;
+                line-height: 1.8rem;       
+                font-size: 1.2rem;
+                text-align: start;
+               }
         }
     }
 
@@ -41,24 +45,21 @@
 }
 
 @media screen and (max-width: 960px) {
-    article img{
-        display: none;
-        z-index: -1;
-    }
 
     .mainAboutMeContent{
         display: flex;
         flex-direction: column;
         position: relative;
-        margin-top: 1rem;
+        top: 5.5rem;
         align-items: center;
-        height: 100%;
+        max-width: 95%;
+        max-height: 70%;
     }
     .AboutMeTextConteiner{
         max-width: 95%;
-        height: 80%;
         align-items: center;
         margin-top:1rem;
         justify-content: center;
+        font-size: 0.9rem;
     }
 }
